@@ -1,2 +1,2 @@
 # jd20de
-Main repository of the JoomlaDay 2020 template
+Main template for JoomlaDay™ Germany 2020
