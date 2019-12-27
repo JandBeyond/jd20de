@@ -1,0 +1,56 @@
+// button
+
+@mixin button($normal:$jd19de-red, $hover:white, $width:'full', $style:'normal') {
+  transition: all 300ms linear;
+  cursor: pointer;
+  display: inline-block;
+  padding: 6px 16px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+
+  // width
+  @if $width == 'full' {
+    text-align: center;
+    width: calc(100% - 40px);
+  } @else {
+    width: auto;
+  }
+
+  // normal
+  @if $style == 'normal' {
+    background-color: $normal;
+    border: 2px dotted $hover;
+    color: $hover;
+    &:hover {
+      background-color: $hover;
+      border-color: $normal;
+      color: $normal;
+    }
+  }
+
+  // invert
+  @if $style == 'invert' {
+    background-color: $hover;
+    border: 2px dotted $normal;
+    color: $normal;
+    &:hover {
+      background-color: $normal;
+      border-color: $hover;
+      color: $hover;
+    }
+  }
+
+  // transparent
+  @if $style == 'transparent' {
+    background-color: transparent;
+    border: 2px dotted $normal;
+    color: $normal;
+    &:hover {
+      background-color: $normal;
+      border-color: $normal;
+      color: $hover;
+    }
+  }
+}

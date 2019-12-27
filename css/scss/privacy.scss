@@ -1,0 +1,20 @@
+// datenschutz
+body.datenschutz article {
+    div[itemprop="articleBody"] h2 {
+        margin: 0;
+        background: 0 none;
+        color: #111;
+        padding: 0;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+body .cc-window {
+    background-color: rgba(0, 0, 0, 0.38) !important;
+    font-family: 'Roboto', sans-serif;
+    & .cc-btn {
+        @include button(white, $jd19de-blue, 'auto', 'transparent');
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3" type="template" client="site" method="upgrade">
+	<name>jd20de</name>
+	<creationDate>14. Februar 2019</creationDate>
+	<author>Alexander Schmidt</author>
+  <authorEmail>alexander.schmidt@edvas.de</authorEmail>
+  <authorUrl>http://alexanderschmidt.info</authorUrl>
+	<copyright>Copyright (C) 2019 Alexander Schmidt. All rights reserved.</copyright>
+	<version>1.0.0</version>
+	<description><![CDATA[
+		<h1>JD19DE</h1>
+		<p>Created by <a href="https://alexanderschmidt.info" target="_blank">Alexander Schmidt</a>.</p>
+    <p>Dieses Template basiert auf folgender Farbpalette:</p>
+    <p>
+      #ff5959<br>
+      #ffad5a<br>
+      #4f9da6<br>
+      #1a0841
+    </p>
+    <p>siehe <a href="https://colorhunt.co/palette/126188" target="_blank">https://colorhunt.co/palette/126188</a></p>
+	]]></description>
+
+	<files>
+		<folder>build</folder>
+		<folder>css</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>img</folder>
+		<folder>js</folder>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>gulpfile.js</filename>
+    <filename>index.php</filename>
+		<filename>offline.php</filename>
+    <filename>package.json</filename>
+		<filename>README.md</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+
+	<positions>
+		<position>menu</position>
+		<position>header</position>
+		<position>intro</position>
+		<position>logo</position>
+		<position>top_a</position>
+		<position>top_b</position>
+		<position>top_c</position>
+		<position>sidebar</position>
+		<position>bottom_a</position>
+		<position>bottom_b</position>
+		<position>bottom_c</position>
+		<position>footer</position>
+		<position>footer2</position>
+		<position>debug</position>
+	</positions>
+</extension>

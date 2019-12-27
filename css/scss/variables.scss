@@ -1,0 +1,171 @@
+// colors
+
+$jd19de-red:                #ff5959;
+$jd19de-orange:             #ffad5a;
+$jd19de-blue:               #4f9da6;
+$jd19de-darkblue:           #1a0841;
+$jd19de-transparent-white:  rgba(255,255,255,0.95);
+
+
+
+// fonts
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/montserrat-v14-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('../fonts/montserrat-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/montserrat-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-v14-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+
+/* montserrat-600 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/montserrat-v14-latin-600.eot'); /* IE9 Compat Modes */
+  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+       url('../fonts/montserrat-v14-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-v14-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-v14-latin-600.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/montserrat-v14-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-v14-latin-600.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* pt-serif-regular - latin */
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/pt-serif-v11-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('PT Serif'), local('PTSerif-Regular'),
+       url('../fonts/pt-serif-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/pt-serif-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/pt-serif-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/pt-serif-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/pt-serif-v11-latin-regular.svg#PTSerif') format('svg'); /* Legacy iOS */
+}
+
+/* pt-serif-700 - latin */
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/pt-serif-v11-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('PT Serif Bold'), local('PTSerif-Bold'),
+       url('../fonts/pt-serif-v11-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/pt-serif-v11-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/pt-serif-v11-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/pt-serif-v11-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/pt-serif-v11-latin-700.svg#PTSerif') format('svg'); /* Legacy iOS */
+}
+
+
+// html
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 24px;
+    overflow-x: hidden;
+    color: #212121;
+}
+
+img {
+    max-width: 100%;
+	height: auto;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s all ease;
+  color: #cdcdcd;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'PT Serif', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  // text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2.4em;
+  line-height: 2.1em;
+  margin: 0;
+  color: $jd19de-red;
+}
+
+h2 {
+  font-size: 1.8em;
+  line-height: 1.4em;
+}
+
+h3 {
+  font-size: 1.8em;
+  line-height: 1.4em;
+}
+
+h4 {
+  font-size: 1.2em;
+  line-height: 0.9em;
+  margin: 0;
+}
+
+h5 {
+  font-size: 1em;
+  line-height: 0.9em;
+}
+
+hr {
+  border: 0 none;
+  border-top: 1px solid #ccc;
+}
+
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+// helpers
+
+.wrap-inside {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+
+
+// gradients
+
+@mixin gradient-red {
+  background: $jd19de-red;
+  background: -moz-linear-gradient(45deg, $jd19de-red 0%, #ff8787 100%);
+  background: -webkit-linear-gradient(45deg, $jd19de-red 0%,#ff8787 100%);
+  background: linear-gradient(45deg, $jd19de-red 0%,#ff8787 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$jd19de-red', endColorstr='#ff8787',GradientType=1 );
+}
+
+@mixin gradient-blue {
+  background: $jd19de-darkblue;
+  background: -moz-linear-gradient(45deg, $jd19de-darkblue 0%, $jd19de-blue 100%);
+  background: -webkit-linear-gradient(45deg, $jd19de-darkblue 0%,$jd19de-blue 100%);
+  background: linear-gradient(45deg, $jd19de-darkblue 0%,$jd19de-blue 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$jd19de-darkblue', endColorstr='$jd19de-blue',GradientType=1 );
+}

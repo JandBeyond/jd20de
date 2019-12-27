@@ -1,0 +1,242 @@
+// programm
+// mod_articles_category
+
+.schedule {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	.time {
+		font-size: 30px;
+		font-weight: bold;
+	}
+	.conf {
+		list-style: none;
+		padding: 0;
+		margin: 20px 0;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+		.slot {
+			text-align: center;
+			border: 1px solid #ccc;
+			a {
+				color: #000;
+			}
+			h4 {
+				margin: 5px 0;
+			}
+			.slot-inner {
+				padding: 10px;
+			}
+			.location-room1 {
+				background-color: #00a7a7;
+				color: #fff;
+			}
+			.location-room2 {
+				background-color: #ff8f1e;
+				color: #fff;
+			}
+			.location-room3 {
+				background-color: #00944a;
+				color: #fff;
+			}
+			.location-room4 {
+				background-color: #1e1eff;
+				color: #fff;
+			}
+		}
+		.full {
+			grid-column: 1 / span4;
+		}
+		.cat-label {
+			display: inline-block;
+			font-size: 0.8rem;
+			line-height: 1rem;
+			text-align: center;
+			color: #fff;
+			padding: 5px;
+			margin-bottom: 10px;
+			&.Alle {
+				background-color: #9b6dc6;
+			}
+			&.Designer {
+				background-color: #3bd58c;
+			}
+		}
+	}
+}
+
+/** programm **/
+.conferenceplus.programme table.table-bordered {
+  border-collapse: collapse;
+  margin-bottom: 0;
+}
+
+.conferenceplus.programme table.table-bordered td,
+.conferenceplus.programme table.table-bordered th {
+  box-sizing: border-box;
+  padding: 10px 3px;
+  position: relative;
+}
+
+.conferenceplus.programme table.table-bordered th {
+  border-top: none;
+  width: 21.5%;
+  background: #ffad5a;
+  color: #1a0841;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.conferenceplus.programme table.table-bordered td.slotype2 {
+    background: #4f9da6;
+    color: #2e2d2c;
+}
+
+.conferenceplus.programme table.table-bordered td.slotype4 {
+    background: #ffad5a;
+    color: #2e2d2c;
+}
+
+.conferenceplus.programme table.table-bordered td {
+  vertical-align: top;
+}
+
+.conferenceplus.programme table.table-bordered th:first-child {
+  width: 14%;
+  text-indent: -9000px;
+}
+
+.conferenceplus.programme table.table-bordered td:first-child {
+  color: #2e2d2c;
+  font-size: 0.8em;
+}
+
+.conferenceplus.programme table .label {
+  border-radius: 3px;
+  font-size: 0.7em;
+  padding: 1px 3px;
+  color: white;
+}
+
+.conferenceplus.programme table .sessionspeaker {
+  font-size: 0.8em;
+  margin: 5px 0;
+  padding: 0;
+}
+.conferenceplus.programme table .glyphicon.glyphicon-user {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHBhdGggZD0iTTI1NiAyNTZjNTIuODA1IDAgOTYtNDMuMiA5Ni05NnMtNDMuMTk1LTk2LTk2LTk2LTk2IDQzLjItOTYgOTYgNDMuMTk1IDk2IDk2IDk2em0wIDQ4Yy02My41OTggMC0xOTIgMzIuNDAyLTE5MiA5NnY0OGgzODR2LTQ4YzAtNjMuNTk4LTEyOC40MDItOTYtMTkyLTk2eiIvPjwvc3ZnPg==);
+  background-size: 14px;
+  background-repeat: no-repeat;
+  background-position: 0 4px;
+}
+.conferenceplus.programme table .glyphicon.glyphicon-cutlery {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzODAuNzIxIiBoZWlnaHQ9IjM4MC43MjEiIHZpZXdCb3g9IjAgMCAzODAuNzIxIDM4MC43MjEiPjxwYXRoIGQ9Ik0zNDQuMzA4IDMyNy4zOWwuMTE2LS4wNDhzLTgyLjg4OC04NC4xMi05MS4wMi05Mi4yNTJjLTUuMDQzLTEuNDg3LTM0LjUzLTE0LjQ1NC0zNS4wNDItMzguODMgMTIuNTgzLTE0LjQxOCAzMC44ODItMjguMjY4IDU3LjkwNy0yOC41NC4wNDUtLjAyNC4xODUtLjAzNi4yNTUtLjAzNiAxMi4yMjMuMzMgMjQuNTYyLTMuNzI0IDM0LjM4LTEyLjMwNC42ODUtLjYwNCAyLjMtMi4yNDggMi4zLTIuMjQ4bDY3LjUxNy04NS4wOS04LjExLTguMTM4LTgyLjU5NyA4Ny40NDgtOS43NDgtOS43NzcgODUuMDE0LTg1LjAwOC03LjE0NS03LjEwNS04NS41MTQgODUuNTMtOC4wODYtOC4wOTIgODUuNTI1LTg1LjUzLTcuODY2LTcuODUtODUuNTI1IDg1LjUyLTkuNTg3LTkuNTY4IDg4LjI4LTgyLjgxOC03LjQxNC03LjQxMy04MS4zNTUgNjMuMzhzLTIuOTUgMi40ODctMy45NzMgMy41MjJjLTExLjE2NiAxMS4xNi0xNS45NjUgMjYuMzA1LTE0LjM2IDQwLjg5Mi0xLjEyOCAxOC41MDMtNy4xMSAzMi4yNDItMTQuODcyIDQyLjY4N0M2MS43MjQgMTcuMzQ1IDQuNTMgMzMuMjE2IDQuNTMgMzMuMjE2TDAgMzcuODFzMTAxLjk4MyAxMDIuMjYyIDE2NC45OTcgMTY1LjM5OGMtMjIuMTEgMjIuMTM0LTEyOC43IDEyOC43MjQtMTI4LjcgMTI4LjcyNGwuMDEuMDIzYy0uMDkyLjA5Mi0uMjA4LjEyNy0uMzE4LjI0My03LjYxNyA3LjYyMi03LjU4OCAxOS45Ni4wMSAyNy41NyA3LjYwNSA3LjYxIDE5Ljk4IDcuNjEgMjcuNTY2LjAyNC4xMjItLjExNi4xNTctLjI0NC4yMjctLjMxNGwuMDIzLjAyM1MxNzAuNTQgMjUyLjgxIDE5Mi41MjIgMjMwLjgzN2MxMS41MjUgMTEuNTM4IDE5LjIxNyAxOS4yNCAyMC43MjggMjAuNzUgOS4zNCA5LjM5IDEwMy4zODMgMTAzLjQzIDEwMy4zODMgMTAzLjQzaC4xMTZjMCAuMTE3LjEwMy4yMjIuMjA4LjI3IDcuNiA3LjY1NSAyMC4wNzcgNy42NTUgMjcuNjY0IDAgNy43MDMtNy41OSA3LjcwMy0yMC4wMiAwLTI3LjY2NS0uMDkzLS4xMTYtLjE5OC0uMTYyLS4zMTQtLjIzeiIvPjwvc3ZnPg==);
+  background-size: 14px;
+  background-repeat: no-repeat;
+  background-position: 0 2px;
+}
+
+.conferenceplus.programme table .addtoremindlist {
+  position: absolute;
+  top: 0;
+  right: 3px;
+  border: 0;
+  text-indent: -9000px;
+  height: 12px;
+  background: none;
+  width: 12px;
+  display: block;
+}
+
+.conferenceplus.programme table .addtoremindlist:after {
+  content: "\2606";
+  display: block;
+  right: 3px;
+  text-indent: 0;
+  font-size: 12px;
+  top: 0px;
+  position: absolute;
+  height: 12px;
+  width: 12px;
+}
+
+.conferenceplus.programme table .addtoremindlist.selected:after {
+  content: "\2605";
+  color: orange;
+}
+
+.conferenceplus.programme table .sessionspeaker a,
+.conferenceplus.programme table .sessiontitle a {
+  color: #2e2d2c;
+}
+
+.conferenceplus.programme .nav.nav-tabs {
+  margin: 0;
+  padding: 0;
+}
+
+.conferenceplus.programme .nav.nav-tabs li {
+  display: inline-block;
+}
+
+.conferenceplus.programme .nav.nav-tabs li a {
+  padding: 3px 10px;
+  background: #4f9da6;
+  color: #fff;
+  display: block;
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+.conferenceplus.programme .nav.nav-tabs li.active a {
+  background: #1a0841;
+  color: #fff;
+}
+
+@media screen and (max-width: 490px) {
+  .conferenceplus.programme .table-bordered {
+    width: 100%;
+  }
+
+  .conferenceplus.programme .table-bordered th,
+  .conferenceplus.programme .table-bordered td {
+    display: block;    
+    width: 100% !important;
+    border-top: 1px solid #e4e4e4;
+  }
+
+  .conferenceplus.programme .table-bordered th {
+    display: none;
+  }
+
+
+  .conferenceplus.programme table.table-bordered td.slotype4,
+  .conferenceplus.programme table.table-bordered td.slotype2 {
+      background: transparent;
+      color: #2e2d2c;
+  }
+
+  .conferenceplus.programme .table-bordered td:first-child {
+    background: #1a0841 !important;
+    color: #4f9da6 !important;
+    text-align: center;
+  }
+
+  .conferenceplus.programme .table-bordered td[data-th]:not(.slotype4):before {
+    content: attr(data-th);
+    display: block;
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (min-width: 490px) and (max-width: 550px) {
+  .conferenceplus.programme .table-bordered {
+    font-size: 0.9em;
+  }
+}

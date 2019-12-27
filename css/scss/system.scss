@@ -1,0 +1,40 @@
+// system messages
+#system-message-container {
+    color: white;
+    .close {
+        // display: inline-block;
+        display: none;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 15px;
+        right: 5px;
+        text-decoration: none;
+        color: white;
+        font-size: 2em;
+        text-align: center;
+    }
+    .alert-error {
+        position: relative;
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: rgba(red, 0.7);
+        border: 2px solid red;
+    }
+    .alert-heading {
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        text-decoration: underline;
+        color: white;
+    }
+    .alert-message {
+        li {
+            list-style: none;
+        }
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+}

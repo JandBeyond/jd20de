@@ -1,0 +1,48 @@
+// news, blog, Aktuelles ... what ever ...
+
+body.aktuelles {
+  .item-page {
+    background-color: $jd19de-transparent-white;
+  }
+}
+
+.item-image img {
+  display: block;
+}
+
+.blog {
+	.item-image {
+		margin: 0 -20px 0 -20px;
+	}
+
+	.readmore .btn {
+		width: calc(100% - 40px);
+		text-align: center;
+	}
+}
+
+
+.item-image .img_caption img {
+  width: 100%;
+  height: auto;
+  display: block;
+
+  & + p.img_caption {
+    position: relative;
+    height: 0;
+    overflow: visible;
+    margin: 0;
+    z-index: 3;
+    bottom: 40px;
+    color: white;
+    background-color: black;
+    left: 20px;
+    text-shadow: 0px 0px 3px black;
+    font-size: 0.8em;
+    font-weight: 300;
+    line-height: 1;
+    @media screen and (min-width:768px) {
+      left: 40px;
+    }
+  }
+}

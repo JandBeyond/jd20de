@@ -1,0 +1,47 @@
+// intro
+
+.intro {
+  text-align: center;
+  margin-bottom: 10px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+  margin-top: -60px;
+  margin-bottom: 60px;
+  color: white;
+
+  .custom {
+    position: relative;
+    z-index: 2;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: white;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    @media screen and (min-width:768px) {
+      font-size: 1.8em;
+    }
+  }
+
+  h3 {
+    font-size: 1.2em;
+    line-height: 1.0em;
+  }
+
+  .button {
+    @include button(white, $jd19de-blue, 'auto', 'transparent');
+  }
+
+  .arrow {
+    font-size: 52px;
+    display: inline-block;
+    margin-top: 40px;
+  }
+}

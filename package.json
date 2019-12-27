@@ -1,0 +1,21 @@
+{
+    "name": "jd19de",
+    "description": "Template for JoomlaDay™ Deutschland 2019",
+    "version": "1.0.0",
+    "homepage": "https://www.joomladay.de/",
+    "author": "Alexander Schmidt",
+    "private": true,
+    "devDependencies": {
+        "autoprefixer": "^9.4.7",
+        "browser-sync": "^2.26.7",
+        "gulp": "^4.0.1",
+        "gulp-autoprefixer": "^6.0.0",
+        "gulp-clean-css": "^4.0.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-sass": "^4.0.2",
+        "gulp-sourcemaps": "^2.6.5",
+        "gulp-uglify": "^3.0.1",
+        "gulp-zip": "^4.2.0",
+        "normalize.css": "^8.0.1"
+    }
+}

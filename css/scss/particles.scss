@@ -1,0 +1,27 @@
+// particles
+// https://github.com/VincentGarreau/particles.js/
+#background {
+  @include gradient-blue;
+}
+
+#particles-intro,
+#particles-logo,
+#particles-nav {
+
+  position: relative;
+  // width: 100%;
+  // min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  canvas {
+    // display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    // @media screen and (min-width:768px) {
+    //   display: block;
+    // }
+  }
+}

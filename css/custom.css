@@ -1,0 +1,28 @@
+/* CUSTOM
+   ========================================================================== */
+
+/**
+ * In best case you don't use this file.
+ * It's for fast fixes in browser only.
+ */
+.contact-miscinfo dl {
+	display: flex;
+	align-items: center;
+	margin: 0;
+}
+.contact-miscinfo dl dd {
+	margin-left: 15px;
+}
+
+
+/* Vorwort 
+.vorwort {
+	background-color: #fefefe;
+	padding: 30px;
+}
+.vorwort a {
+	color: #ff5959;
+}*/
+.themen p {
+	margin: 20px 0;
+}
