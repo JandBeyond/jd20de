@@ -64,10 +64,9 @@
     left: 20px;
 }
 
-.btn {
+.btn, #bfSubmitButton {
     @include button($jd19de-red, white, 'full', 'normal');
 }
-
 .bloglandingpage .item .article-info {
     position: absolute;
     top: 0;

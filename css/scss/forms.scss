@@ -48,4 +48,35 @@ fieldset {
 .rsform-block {
 	padding: 10px 40px;
 }
-
+.bfPageIntro {
+    padding: 0 !important;
+}
+#bfSubmitButton {
+    float: none !important;
+}
+.bfBlock .bfClearfix {
+	float: none !important;
+	margin-top: 10px; 
+}
+.bfQuickMode .bfLabelLeft .bfElementGroupNoWrap {
+	float: none !important;
+}
+.bfQuickMode span.bfElemWrap {
+    float: none !important;
+    display: flex;
+}
+.bfQuickMode .bfLabelLeft .bfElementGroupNoWrap, .bfQuickMode .bfLabelLeft .bfCaptcha {
+    float: none !important;
+    display: flex;
+    align-items: center;
+}
+.bfQuickMode .bfLabelLeft .bfElementGroup input, .bfQuickMode .bfLabelLeft .bfElementGroupNoWrap input, .bfQuickMode .bfLabelTop .bfElementGroup input, .bfQuickMode .bfLabelTop .bfElementGroupNoWrap input, .bfQuickMode .bfLabelRight .bfElementGroup input, .bfQuickMode .bfLabelRight .bfElementGroupNoWrap input, .bfQuickMode .bfLabelBottom .bfElementGroup input, .bfQuickMode .bfLabelBottom .bfElementGroupNoWrap input {
+    float: none !important;
+    display: inline-block !important;
+	margin: 0 5px 0px 0px !important;
+}
+.bfQuickMode .bfLabelLeft .bfElementGroup label, .bfQuickMode .bfLabelLeft .bfElementGroupNoWrap label, .bfQuickMode .bfLabelTop .bfElementGroup label, .bfQuickMode .bfLabelTop .bfElementGroupNoWrap label, .bfQuickMode .bfLabelRight .bfElementGroup label, .bfQuickMode .bfLabelRight .bfElementGroupNoWrap label, .bfQuickMode .bfLabelBottom .bfElementGroup label, .bfQuickMode .bfLabelBottom .bfElementGroupNoWrap label {
+    float: none !important;
+    display: inline-block !important;
+	margin: 0 15px 0px 0px !important;
+}

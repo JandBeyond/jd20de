@@ -41,7 +41,7 @@ main {
   align-items: stretch;
   padding: 0 10px;
 }
-body:not(.landingpage) .page-header h1 {
+body:not(.landingpage) .page-header h1, .bfPageIntro h1 {
 	background-color: #ff5959;
 	color: #fff;
 	padding-left: 40px;
