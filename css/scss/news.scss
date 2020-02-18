@@ -4,8 +4,29 @@ body.aktuelles {
   .item-page {
     background-color: $jd19de-transparent-white;
   }
+	article {
+	  padding: 0;
+	  background-color: transparent;
+	}
+	.page-header h1 {
+		margin: 0 0 20px -20px;
+	}
 }
-
+.aktuelles .article-info dd {
+	margin: 0;
+}
+.aktuelles .article-info {
+	margin: 0 -20px;
+	padding: 15px 20px;
+	background-color: #d9d9d9;
+	font-weight: 700;
+	text-align: right;
+}
+.aktuelles .blog .items-row {
+  padding: 0 20px 20px;
+  background-color: $jd19de-transparent-white;
+	margin-bottom: 40px;
+}
 .item-image img {
   display: block;
 }
@@ -14,13 +35,11 @@ body.aktuelles {
 	.item-image {
 		margin: 0 -20px 0 -20px;
 	}
-
 	.readmore .btn {
 		width: calc(100% - 40px);
 		text-align: center;
 	}
 }
-
 
 .item-image .img_caption img {
   width: 100%;

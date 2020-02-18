@@ -13,15 +13,13 @@
 }
 
 .bloglandingpage .items-row {
-    width: 100%;
     display: flex;
-    align-items: stretch;
+	flex-wrap: wrap;
+    margin: calc((20px / 2) * -1);
 	.item {
-		flex: 1 1 400px;
-		&:nth-child(2) {
-			margin-left: 20px;
-			margin-right: 20px;
-		}
+		flex-grow: 1;
+		flex-basis: calc((768px - (100% - 20px)) * 999);
+		margin: calc(20px / 2);
 	}
 }
 
@@ -35,13 +33,10 @@
     width: 100%;
     color: #2e2d2c;
     padding: 0px 20px 40px 20px;
-    position: relative;
-    height: 100%;
 }
 
 .bloglandingpage .item .item-image {
     margin: 0 -20px;
-	height: 500px;
 }
 
 .bloglandingpage .item .item-image img {

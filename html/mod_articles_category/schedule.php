@@ -42,7 +42,7 @@ defined('_JEXEC') or die;
 							<?php endif; ?>
 						</div>
 						<?php if(!empty($jcfields['room']->value)) : ?>
-						<div class="slot-inner location-<?php echo $jcfields['room']->rawvalue; ?>"><i class="fas fa-map-marker-alt"></i> <?php echo $jcfields['room']->name; ?></div>
+						<div class="slot-inner location-<?php echo $jcfields['room']->rawvalue; ?>"><i class="fas fa-map-marker-alt"></i> <?php echo $jcfields['room']->value; ?></div>
 						<?php endif; ?>
 					</li>
 				<?php endforeach; ?>

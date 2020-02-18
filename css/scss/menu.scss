@@ -1,4 +1,8 @@
 // menu
+nav {
+	font-size: 18px;
+	font-weight: 400;
+}
 @media (max-width: 767px) {
     nav {
         height: 0;
@@ -55,7 +59,7 @@
     #mainMenu input:checked~span:nth-last-child(2) {
         transform: rotate(-45deg) translate(0, -1px);
     }
-    #mainMenu ul {
+    #mainMenu > ul {
         @include gradient-red;
         position: absolute;
         width: calc(100vw - 50px);
@@ -76,16 +80,16 @@
         letter-spacing: 1px;
         color: white;
     }
-    #mainMenu li.active {
-        background-color: white;
-        padding-left: 20px;
-        a {
-            color: $jd19de-red;
-        }
+    #mainMenu ul li.active > a {
+		text-decoration: underline;
     }
     #mainMenu input:checked~ul {
         transform: none;
     }
+	#mainMenu > ul .nav-child {
+		padding-left: 10px;
+		list-style: none;
+	}
 }
 
 @media (min-width: 768px) {
@@ -109,27 +113,11 @@
                 justify-content: space-around;
             }
             li {
-                @media (min-width: 768px) {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    // width: 14.28%;
-                    overflow: hidden;
-                }
                 a {
                     display: block;
                     color: white;
-                    @media (min-width: 768px) {
-                        padding: 10px;
-                        text-align: center;
-                        text-transform: uppercase;
-                        display: flex;
-                        flex-wrap: wrap;
-                        height: 100%;
-                        width: 100%;
-                        justify-content: center;
-                        align-items: center;
-                    }
+                    text-transform: uppercase;
+                    padding: 10px;
                     &:hover {
                         background-color: white;
                         color: $jd19de-blue;
@@ -142,4 +130,27 @@
             }
         }
     }
+	#mainMenu .nav-child {
+		display: none;
+		background-color: #fff;
+		font-size: 0.9rem !important;
+		margin: -1px 0 0;
+		padding: 10px 0;
+		position: absolute;
+		z-index: 905;
+		min-width: 250px;
+		list-style: none;
+	}
+	#mainMenu .nav-child li a {
+		color: $jd19de-blue;
+        display: block;
+        padding: 10px 20px;
+	}
+	#mainMenu .nav-child li:hover a {
+		text-decoration: underline;
+	}
+	#mainMenu .nav .parent:hover > .nav-child {
+		display: block;
+		animation: fadeIn 0.4s;
+	}
 }
