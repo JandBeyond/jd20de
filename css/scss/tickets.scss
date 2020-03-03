@@ -124,85 +124,43 @@
     margin-top: 10px;
 }
 
+.tickettypes a.ticket {
+    border-radius: .75rem;
+    background: #fff;
+	box-shadow: 20px 20px 60px #d9d9d9,-20px -20px 60px #fff;
+	display: block;
+	padding: 2.5rem;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: #373737;
+    transition: transform 330ms cubic-bezier(.855,-.41,.135,1.39);
+    transform-origin: center;
+    position: relative;
+    max-width: 768px;
+    margin: 2rem auto;
+    font-weight: 400;
+}
+
+.tickettypes h1 + .clearfix {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+    display: grid;
+}
 
 /* Speacial Tickets */
 
-.ttid35 .ticketfee,
-.ttid35 .ticketname,
-.ttid35 .ticketfee_top,
-.ttid36 .ticketfee,
-.ttid36 .ticketname,
-.ttid36 .ticketfee_top,
-.ttid40 .ticketfee,
-.ttid40 .ticketname,
-.ttid40 .ticketfee_top,
-.ttid41 .ticketfee,
-.ttid41 .ticketname,
-.ttid41 .ticketfee_top,
-.ttid45 .ticketfee,
-.ttid45 .ticketname,
-.ttid45 .ticketfee_top,
-.ttid46 .ticketfee,
-.ttid46 .ticketname,
-.ttid46 .ticketfee_top,
-.ttid50 .ticketfee,
-.ttid50 .ticketname,
-.ttid50 .ticketfee_top,
-.ttid51 .ticketfee,
-.ttid51 .ticketname,
-.ttid51 .ticketfee_top,
-.ttid55 .ticketfee,
-.ttid55 .ticketname,
-.ttid55 .ticketfee_top,
-.ttid56 .ticketfee,
-.ttid56 .ticketname,
-.ttid56 .ticketfee_top,
-.ttid60 .ticketname,
-.ttid60 .ticketfee_top,
-.ttid60 .ticketfee,
-.ttid61 .ticketname,
-.ttid61 .ticketfee,
-.ttid61 .ticketfee_top,
-.ttid65 .ticketname,
-.ttid65 .ticketfee_top,
-.ttid65 .ticketfee,
-.ttid66 .ticketname,
-.ttid66 .ticketfee,
-.ttid66 .ticketfee_top,
-.ttid70 .ticketname,
-.ttid70 .ticketfee_top,
-.ttid70 .ticketfee,
-.ttid71 .ticketname,
-.ttid71 .ticketfee_top,
-.ttid71 .ticketfee,
-.ttid75 .ticketname,
-.ttid75 .ticketfee_top,
-.ttid75 .ticketfee,
-.ttid76 .ticketname,
-.ttid76 .ticketfee,
-.ttid76 .ticketfee_top {
+.ttid4 .ticketfee,
+.ttid4 .ticketname,
+.ttid4 .ticketfee_top,
+.ttid5 .ticketfee,
+.ttid5 .ticketname,
+.ttid5 .ticketfee_top {
     // color: #D4AF37;
     color: $jd19de-darkblue;
 }
 
-.ttid35 .ticketicon,
-.ttid36 .ticketicon,
-.ttid40 .ticketicon,
-.ttid41 .ticketicon,
-.ttid45 .ticketicon,
-.ttid46 .ticketicon,
-.ttid50 .ticketicon,
-.ttid51 .ticketicon,
-.ttid55 .ticketicon,
-.ttid56 .ticketicon,
-.ttid60 .ticketicon,
-.ttid61 .ticketicon,
-.ttid65 .ticketicon,
-.ttid66 .ticketicon,
-.ttid70 .ticketicon,
-.ttid71 .ticketicon,
-.ttid75 .ticketicon,
-.ttid76 .ticketicon {
+.ttid4 .ticketicon,
+.ttid5 .ticketicon {
     // background-color: #D4AF37;
     background-color: $jd19de-darkblue;
     background-image: url("../img/joomla_signet_darkblue.svg");
