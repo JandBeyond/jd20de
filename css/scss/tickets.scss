@@ -74,6 +74,14 @@
 .tickettypes a.ttid5 .ticketfee_top {
     color: $jd19de-darkblue;
 }
+.tickettypes a.ttid6 {
+	background-color: lighten($jd19de-blue, 40%);
+}
+.tickettypes a.ttid6 .ticketfee,
+.tickettypes a.ttid6 .ticketname {
+    color: $jd19de-blue;
+}
+
 .tickets .conferenceplus {
     background-color: rgba(255, 255, 255, .95) !important;
 }
