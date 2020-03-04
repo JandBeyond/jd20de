@@ -1,8 +1,8 @@
 <?php defined( '_JEXEC' ) or die;
 
 JHtml::script(Juri::base() . 'templates/'.$this->template.'/build/app.js');
-JHtml::stylesheet(Juri::base() . 'templates/'.$this->template.'/build/style.css');
-JHtml::stylesheet(Juri::base() . 'templates/'.$this->template.'/css/custom.css');
+JHtml::stylesheet(Juri::base() . 'templates/'.$this->template.'/build/style.css?v1');
+JHtml::stylesheet(Juri::base() . 'templates/'.$this->template.'/css/custom.css?v1');
 
 $app = JFactory::getApplication();
 $params = $app->getParams();
@@ -78,6 +78,7 @@ $active = $app->getMenu()->getActive();
           <?php if ($this->countModules('sidebar')) : ?>
             <aside>
               <jdoc:include type="modules" name="sidebar" />
+
             </aside>
           <?php endif; ?>
         </div>

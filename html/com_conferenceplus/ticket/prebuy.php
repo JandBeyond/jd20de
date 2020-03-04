@@ -31,7 +31,7 @@ $showMessages = ! empty(JFactory::getApplication()->getMessageQueue());
 
 $validCouponAvailable = $this->item->couponAvailable;
 
-$fields = array('firstname', 'lastname', 'email', 'ask4gender', 'ask4tshirtsize', 'ask4food', 'ask4food0');
+$fields = array('firstname', 'lastname', 'email', 'ask4gender', 'ask4tshirtsize', 'ask4food', 'ask4food0', 'ask4newbie');
 $fieldsInvoice = array('invoicecompany', 'invoicestreet', 'invoiceline2', 'invoicepcode', 'invoicecity', 'invoicecountry');
 
 ?>
