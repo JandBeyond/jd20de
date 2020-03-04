@@ -75,7 +75,14 @@ a {
   transition: 0.3s all ease;
   color: #cdcdcd;
 }
-
+article a {
+    color: $jd19de-blue;
+    text-decoration: underline;
+    &:hover {
+      color: $jd19de-darkblue;
+      text-decoration: none;
+    }
+  }
 h1,
 h2,
 h3,
