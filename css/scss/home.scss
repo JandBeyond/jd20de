@@ -15,11 +15,11 @@
 .bloglandingpage .items-row {
     display: flex;
 	flex-wrap: wrap;
-    margin: calc((20px / 2) * -1);
+    margin: 10px -10px;
 	.item {
 		flex-grow: 1;
 		flex-basis: calc((768px - (100% - 20px)) * 999);
-		margin: calc(20px / 2);
+		margin: 10px;
 	}
 }
 
