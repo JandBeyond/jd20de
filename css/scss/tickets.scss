@@ -60,7 +60,7 @@
 }
 @media screen and (min-width: 992px) {
 	.tickettypes h1 + .clearfix {
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
 		grid-gap: 1rem;
 		display: grid;
 	}
